@@ -17,6 +17,56 @@
     background-size: cover;
     background-position: 50%;
 }
+
+header {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 130%;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+}
+
 .container h1 {
     color: var(--color-light);
 }
+
+.container h2 {
+    margin-top: 12%;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 250%;
+    color: var(--color-light);
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 220%;
+    color: var(--color-light);
+}
+
+.container button {
+    text-decoration: none;
+    margin-top: 30px;
+    height: 6%;
+    width: 15%;
+    font-size: larger;
+    border: none;
+    border-radius: 80px;
+    background-color: var(--color-pink);
+    color: (var(--color-light));
+    text-align: center;
+    cursor: pointer;
+} 
