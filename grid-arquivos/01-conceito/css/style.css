@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-color: #779b63;
+    --second-color: #d62828;
+    --third-color: #f77f00;
+    --fourth-color: #291e8b;
+    --bg-dark: #333;
+    --bg-white: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-dark);
+    padding: 1rem;
+    font-family: calibri;
+    font-size: 1.6rem;
+}
+
+h1 {
+    color: var(--bg-white);
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    color: var(--first-color);
+    font-size: 3rem;
+}
+
+.container {
+    margin: 2rem auto;
+    text-align: center;
+    color: var(--bg-white);
+    font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.ex-1 {
+    grid-template-columns: 10rem 20rem 5rem 8rem;
+}
+
+.ex-2 {
+    grid-template-columns: 10% 50%;
+}
+
+.ex-3 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.ex-4 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr) 100px 200px;
+}
+
+.ex-5 {
+    grid-template-columns: minmax(100px, 250px) 1fr 1fr 100px;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+}
+
+.ex-6 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.ex-7 {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.ex-8 {
+    grid-template-rows: 20rem 30rem 10rem 5rem;
+}
+
+.ex-9 {
+    grid-template-rows: 1fr 2fr 3fr 4fr;
+}
+
+.box1 {
+    background-color: var(--first-color);
+    min-height: 5rem;
+}
+
+.box2 {
+    background-color: var(--second-color);
+    min-height: 5rem;
+}
+
+.box3 {
+    background-color: var(--third-color);
+    min-height: 5rem;
+}
+
+.box4 {
+    background-color: var(--fourth-color);
+    min-height: 5rem;
+}

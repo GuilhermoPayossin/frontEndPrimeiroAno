@@ -1,0 +1,26 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2.5rem;
+    font-family: calibri;
+}
+
+.container {
+    background-color: #333;
+    margin: 20px auto;
+    width: 90%;
+    min-height: 95vh;
+}
+
+.box {
+    background-color: #ccc;
+}
