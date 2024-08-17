@@ -17,21 +17,33 @@ body {
 .container {
     padding: 1rem;
     color: #fff;
-    font-size: 3rem;   
+    font-size: 3rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    gap: 5px;
+
 }
 
 header {
-    background-color: hsl(252, 6%, 12%);   
+    background-color: hsl(252, 6%, 12%); 
+    grid-column-start: 1;
+    grid-column-end: 3;  
 }
 
 main {
-    background-color: hsl(252, 35%, 16%);   
+    background-color: hsl(252, 35%, 16%); 
+    grid-column-start: 1;
+    grid-column-end: 2;  
 }
 
 aside {
     background-color: hsl(252, 52%, 14%);  
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 footer {
-    background-color: hsl(252, 74%, 12%);   
+    background-color: hsl(252, 74%, 12%); 
+    grid-column: 1 / 3;
 }
