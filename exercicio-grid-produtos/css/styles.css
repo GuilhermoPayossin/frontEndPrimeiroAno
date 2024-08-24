@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-light-700: #ffffff;
+    --color-light-500: #f9f9f9;
+    --color-light-300: #cccccc;
+    --gradient: linear-gradient(45deg,
+    hsl(240deg 6% 43%) 0%,
+    hsl(271deg 8% 48%) 4%,
+    hsl(308deg 11% 53%) 13%,
+    hsl(332deg 22% 60%) 26%,
+    hsl(348deg 37% 67%) 42%,
+    hsl(3deg 56% 72%) 58%,
+    hsl(16deg 77% 74%) 73%,
+    hsl(27deg 88% 74%) 86%,
+    hsl(39deg 87% 73%) 96%,
+    hsl(55deg 72% 72%) 100%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: calibri;
+    background-color: var(--color-light-500);
+}
+
+header {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: var(--color-light-700);
+    border-bottom: 1px solid var(--color-light-300)
+}
+
+main {
+    max-width: 132rem;
+    margin: 2rem auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    grid-auto-flow: row;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.product-item {
+    background-image: var(--gradient);
+    color: var(--color-light-700);
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.product-item img {
+    max-width: 70%;
+    margin: 1rem 0;
+    transition: scale .4s;
+}
+
+.product-item img:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.product-item div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.product-item p {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+footer{
+    text-align: center;
+    padding: 3rem 0;
+    margin: 3rem;
+    background-color: var(--color-light-700);
+    border-top: 1px solid var(--color-light-300)
+}
+
+.span-row-2 {
+    grid-row: span 2;
+}
+
+.span-col-2 {
+    grid-column: span 2;
+}
+
+@media(width <= 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(auto, 1fr));
+    }
+    .span-col-2 {
+        grid-column: span 1;
+    }
+}
+
+@media(width <= 650px) {
+   .product-grid {
+    grid-template-columns: 1fr;
+   }
+}
