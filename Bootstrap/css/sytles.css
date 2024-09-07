@@ -1,0 +1,15 @@
+:root {
+    --color-red-100: #fae6e6;
+    --color-red-900: #712b2b;
+    --font-body: font-family: "Open Sans", sans-serif;;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+.bg-red-100 {background-color: var(--color-red-100);}
+.bg-red-900 {background-color: var(--color-red-900);}
+
+.text-red-100 {color: var(--color-red-100);}
+.text-red-900 {color: var(--color-red-900);}
