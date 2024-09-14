@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #dc143c;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700 !important;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    border-color: #fff;
+}
+
+.bi-filter-right {
+    font-size: 28px;
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #1b14dc;
+}
