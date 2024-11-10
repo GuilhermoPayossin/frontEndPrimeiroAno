@@ -1,0 +1,105 @@
+:root {
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --color-pink: #dc143c;
+    --font-body: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body)
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: var(--color-light);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .5s;
+}
+
+a:hover {
+    color: var(--color-pink);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), 
+    url(../images/pexels-felix-mittermeier-957002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.container h1 {
+    color: var(--color-light);
+}
+
+.header-page {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-bg {
+    background-color: var(--color-pink);
+    padding: 3px;
+    border-radius: 7px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-light);
+    height: calc(100vh - 100px);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero h2 {
+    font-size: clamp(24px, 4vw, 40px);
+}
+
+.hero h3 {
+    font-size: clamp(18px, 3vw, 30px);
+}
+
+.btn {
+    border: 3px solid var(--color-pink);
+    background-color: var(--color-pink);
+    padding: 8px 30px;
+    border-radius: 70px;
+    transition: .7s;
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+.cards {
+    border: 2px solid var(--color-dark);
+    width: 90%;
+    min-height: 100vh;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.cards h3 {
+    margin: 40px 0;
+
+}

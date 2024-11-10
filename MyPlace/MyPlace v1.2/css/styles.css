@@ -1,0 +1,93 @@
+:root {
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --color-pink: #dc143c;
+    --font-body: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body)
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: var(--color-light);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .5s;
+}
+
+a:hover {
+    color: var(--color-pink);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), 
+    url(../images/pexels-felix-mittermeier-957002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.container h1 {
+    color: var(--color-light);
+}
+
+.header-page {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.hero h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    padding: 120px 0 0 0;
+    color: var(--color-light);
+}
+
+.hero h3 {
+    width: 100%;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    font-size: 35px;
+    color: var(--color-light);
+}
+
+.hero a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px 35px;
+    color: var(--color-light);
+    transition: color .5s;
+    background-color: var(--color-pink);
+}
+
+.hero a:hover {
+    color: var(--color-dark);
+}
